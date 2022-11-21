@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 17</title>
+</head>
+<body>
+    
+
+
+
+
+
+    <script>
+
+// 1. Write a program using a for loop and print the numbers from 200 till 0 with the
+// decrement of 3.
+
+for ( let i = 200; i>=0; i-=3) {
+    console.log(i);
+}
+
+
+
+// 2. Write a program to display your name 10 times using a while loop.
+
+let i = 1;
+
+while (i<=10) {
+    document.write ( i + " " + " Hina"  + "<br>"  );
+    i++;
+}
+
+
+// 3. Write a program to print a sum of even numbers in between 1-10 using a while loop.
+
+
+let x = 1;
+let sum = 0;
+while (x <= 10) {
+    if ( x % 2 ==0) {
+        sum = sum + x;
+        
+    }
+    x++;
+}
+console.log("Sum of all the even numbers from 1 till 10 is " +  sum);
+
+
+// 4. Write a program to display a number between 1 to 5 using the do while loop.
+
+let num = 5;
+let a =1;
+do {
+    if (num >=1 && num <=5){
+        console.log("Number is in between 1 to 5" )
+    }
+    a++;
+} while (a >=10);
+
+
+
+// 5. Write a function to print the sum of two numbers.
+
+function number (a,b) {
+    
+    console.log( "The sum of two numbers is " + (a+b) );
+   
+}
+//   console.log("The sum of two number is " +  number(10,5)) ;
+number(10,20)
+
+// method 2
+
+function add (a,b) {
+    
+    return (a+b);
+}
+   console.log("The sum of two number is " +  add(10,5)) ;
+
+
+//   6. Invoke a function and pass values to the ‘width’ &amp; ‘height’ parameters inside the
+// parenthesis store the return value in a variable ‘Area’ and print it in the console.
+
+// function calcarea (w,h){
+//     area = w * h;
+//     return console.log( "Area of given numbers is " + area)
+// }
+
+// calcarea(2,3);
+
+
+function calcarea(width, height) {
+  area = width * height;
+  return area;
+}
+
+ console.log( "Area of two numbers is " + calcarea(2,3) )
+    </script>
+    
+</body>
+</html>
